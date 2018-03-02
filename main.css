@@ -1,3 +1,5 @@
+/*===== GENERAL STYLES =====*/
+
 body {
 	margin: 0;
 	padding: 0;
@@ -11,13 +13,6 @@ main {
 	color: #37374f;
 }
 
-h1 {
-	font: bold 3em/1.5 'Press Start 2P', cursive;
-	text-align: center;
-	padding: 1.25em 0 1em 0;
-	margin:0 auto;
-}
-
 .left, .right {
 	display: inline-block;
 	padding: 10px 15px 10px 0;
@@ -25,15 +20,43 @@ h1 {
 	text-align: center;
 }
 
+.buttons {
+	display: block;
+}
+
+.color {
+	margin: 1.5em auto;
+}
+
+/*===== TEXT STYLES =====*/
+
+h1 {
+	font: bold 3em/1.5 'Press Start 2P', cursive;
+	text-align: center;
+	padding: 1.25em 0 1em 0;
+	margin:0 auto;
+}
+
+h2 {
+	font-weight: normal;
+	margin: 35px auto 20px auto;
+	line-height: 1.5;
+}
+
+/*===== INPUT STYLES =====*/
+
 label {
 	font: 0.9375em/1.5 'Press Start 2P', cursive;
 	margin: 0;
 	vertical-align: middle;
 }
 
-.buttons {
-	display: block;
+input[type=number] {
+	width: 70px;
+	vertical-align: middle;
 }
+
+/*===== BUTTON STYLES =====*/
 
 button {
 	background-color: #655e8c;
@@ -51,20 +74,11 @@ button:active {
 	outline: none;
 }
 
-.color {
-	margin: 1.5em auto;
+.resetBtn {
+	display: none;
 }
 
-.design {
-	font-weight: normal;
-	margin: 35px auto 20px auto;
-	line-height: 1.5;
-}
-
-input[type=number] {
-	width: 70px;
-	vertical-align: middle;
-}
+/*===== TABLE STYLES =====*/
 
 table {
 	border-collapse: collapse;
@@ -77,6 +91,3 @@ td {
 	height: 20px;
 }
 
-.resetBtn {
-	display: none;
-}
