@@ -20,7 +20,8 @@ main {
 	vertical-align: top;
 }
 
-.color {
+.color,
+canvas {
 	margin: 0 auto;
 }
 
@@ -30,16 +31,10 @@ main {
 	padding: 10px 10px;
 }
 
-#canvas {
- 	display: block;
-}
-
-.preview-buttons {
-	display: block;
-}
-
+#canvas,
+.preview-buttons,
 canvas {
-	display: block;
+ 	display: block;
 }
 
 .show {
