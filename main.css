@@ -7,7 +7,6 @@ body {
 
 main {
 	margin: 0 auto;
-	width: 70%;
 	text-align: center;
 	font-family: 'Press Start 2P', cursive;
 	color: #37374f;
@@ -15,46 +14,88 @@ main {
 
 .left, .right {
 	display: inline-block;
-	padding: 10px 15px 10px 0;
+	padding: 10px 15px 0px 0;
 	margin: 0;
-	text-align: center;
-}
-
-.buttons {
-	display: block;
+	text-align: right;
+	vertical-align: top;
 }
 
 .color {
-	margin: 1.5em auto;
+	margin: 0 auto;
 }
+
+.canvas-container,
+.preview-container {
+	display: inline-block;
+	padding: 10px 10px;
+}
+
+#canvas {
+ 	display: block;
+}
+
+.preview-buttons {
+	display: block;
+}
+
+canvas {
+	display: block;
+}
+
+.show {
+	display: inline-block;
+}
+
+.hide {
+	display: none;
+}
+
 
 /*===== TEXT STYLES =====*/
 
 h1 {
-	font: bold 3em/1.5 'Press Start 2P', cursive;
+	font: bold 2em/1.5 'Press Start 2P', cursive;
 	text-align: center;
-	padding: 1.25em 0 1em 0;
+	padding: 1.25em 0 0.208em 0;
 	margin:0 auto;
 }
 
 h2 {
 	font-weight: normal;
-	margin: 35px auto 20px auto;
+	margin: 25px auto 0 auto;
 	line-height: 1.5;
+}
+
+.right p,
+.left p {
+	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	color: red;
+	padding:0;
+	margin: 0;
 }
 
 /*===== INPUT STYLES =====*/
 
 label {
-	font: 0.9375em/1.5 'Press Start 2P', cursive;
+	font: 1.5em/1.5 'Lato', sans-serif;
 	margin: 0;
-	vertical-align: middle;
+}
+
+.left label,
+.right label {
+	display: block;
 }
 
 input[type=number] {
 	width: 70px;
+	margin-left: 10px;
 	vertical-align: middle;
+	border: 1px solid #655e8c;
+	color: #37374f;
 }
+
 
 /*===== BUTTON STYLES =====*/
 
@@ -63,8 +104,8 @@ button {
 	color: #fff;
 	border-radius: 3px;
 	border: 0 none;
-	padding: 5px 7px;
-	margin: 10px auto;
+	padding: 5px 10px;
+	margin: 15px auto;
 }
 
 button:active {
@@ -74,20 +115,19 @@ button:active {
 	outline: none;
 }
 
-.resetBtn {
-	display: none;
-}
 
 /*===== TABLE STYLES =====*/
 
 table {
 	border-collapse: collapse;
-	margin:  10px auto;
+	margin:  0 auto;
+	padding: 20px 20px;
+	border: 1px solid #6c6c6c;
 }
 
 td {
-	border: 1px solid #1d1d46;
-	width: 20px;
-	height: 20px;
+	border: 1px solid #6c6c6c;
+	width: 25px;
+	height: 25px;
 }
 
