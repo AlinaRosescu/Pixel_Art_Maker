@@ -34,7 +34,6 @@ function makeGrid() {
 function checkValuesAreInserted(heightVal, widthVal) {
     $(".left p, .right p").removeClass("show").addClass("hide");
     if (heightVal == 0 && widthVal == 0) {
-        console.log(widthVal);
         $(".left p, .right p").removeClass("hide").addClass("show");
         valuesSet = false;
     } else if (heightVal == 0) {
@@ -77,23 +76,11 @@ function showBtn() {
     $("#reset-btn, #preview-btn, #save-btn").removeClass("hide").addClass("show");
 }
 
+//creates a canvas with a preview of the drawn pixel art
 function previewImg() {
-    /*$("#canvas").css("display", "inline-block");
-    $("#preview-image").css("display", "inline-block");
-    $("canvas").css("border", "1px solid red");*/
-
     if ($("#preview").children("canvas").length > 0) {
         $("#preview").empty();
-    }
 
-    /*var $canvasClone = $("#canvas").clone();
-    $("#preview-image").append($canvasClone);
-    $canvasClone.addClass("clone");*/
-    /*$(".clone td").css("border", "none");
-    $(".clone table").css("border", "none");*/
-
-
-    /*console.log($canvasClone);*/
     html2canvas(document.querySelector("#canvas")).then(canvas => {
         $("#preview").append(canvas);
         getCanvas = canvas;
